@@ -237,9 +237,34 @@ BOOTTIME_SLIDES = \
 		boottime-kernel \
 		boottime-bootloader \
 		boottime-hardware-init \
-		boottime-alternatives \
+		boottimealternatives \
 		last-slides
 
+TE5009_SLIDES = \
+		te5009-partI-title \
+		te5009-embedded-systems-landscape \
+		te5009-embedded-systems-attributes \
+		te5009-future-of-embedded-systems \
+		te5009-partII-title \
+		te5009-embedded-architecture-soc \
+		te5009-embedded-architecture-memory \
+		te5009-embedded-architecture-communication \
+		te5009-embedded-architecture-pins \
+		imx6-application-processors \
+		te5009-imx6-boards \
+		imx6-sabre-sdb \
+		imx6-humming-board \
+		te5009-partIII-title \
+		te5009-toolchains-title \
+		sysdev-toolchains-definition \
+		sysdev-toolchains-c-libraries-title \
+		c-libraries \
+		sysdev-toolchains-options \
+		sysdev-toolchains-obtaining \
+		sysdev-toolchains-lab 
+#\
+#		imx6-platform-sdk \
+#		imx6-platform-sdk-lab
 
 # List of labs for the different courses
 
@@ -316,7 +341,7 @@ PDFLATEX_ENV = TEXINPUTS=.:$(PWD)/common:
 PDFLATEX_OPT = -shell-escape -file-line-error -halt-on-error
 
 # The common slide stylesheet
-STYLESHEET = common/beamerthemeFreeElectrons.sty
+STYLESHEET = common/beamerthemeITESM.sty
 
 #
 # === Picture lookup ===
@@ -563,11 +588,13 @@ help:
 	@echo " full-kernel-slides.pdf          Complete slides for the 'kernel' course"
 	@echo " full-android-slides.pdf         Complete slides for the 'android' course"
 	@echo " full-boottime-slides.pdf        Complete slides for the 'boottime' course"
+	@echo " full-te5009-slides.pdf          Complete slides for the 'te5009' course"
 	@echo " android-agenda.pdf              Agenda for the 'android' course"
 	@echo " boottime-agenda.pdf             Agenda for the 'boottime' course"
 	@echo " buildroot-agenda.pdf            Agenda for the 'buildroot' course"
 	@echo " kernel-agenda.pdf               Agenda for the 'kernel' course"
 	@echo " yocto-agenda.pdf                Agenda for the 'yocto' course"
+	@echo " te5009-agenda.pdf               Agenda for the 'te5009' course"
 	@echo
 	@echo " <some-chapter>-slides.pdf       Slides for a particular chapter in slides/"
 	@echo " <some-chapter>-labs.pdf         Labs for a particular chapter in labs/"
